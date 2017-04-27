@@ -9,14 +9,16 @@
 /* Begin PBXBuildFile section */
 		E3B754521EB18BED000DA5FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B754511EB18BED000DA5FA /* main.m */; };
 		E3B754551EB18BED000DA5FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B754541EB18BED000DA5FA /* AppDelegate.m */; };
-		E3B754581EB18BED000DA5FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B754571EB18BED000DA5FA /* ViewController.m */; };
-		E3B7545B1EB18BED000DA5FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3B754591EB18BED000DA5FA /* Main.storyboard */; };
+		E3B754581EB18BED000DA5FA /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B754571EB18BED000DA5FA /* MainController.m */; };
 		E3B7545D1EB18BED000DA5FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3B7545C1EB18BED000DA5FA /* Assets.xcassets */; };
 		E3B754601EB18BED000DA5FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3B7545E1EB18BED000DA5FA /* LaunchScreen.storyboard */; };
 		E3B7546C1EB18C3E000DA5FA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B7546B1EB18C3E000DA5FA /* SystemConfiguration.framework */; };
 		E3B7546E1EB18C4C000DA5FA /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B7546D1EB18C4C000DA5FA /* libresolv.tbd */; };
 		E3B754701EB18C5C000DA5FA /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B7546F1EB18C5C000DA5FA /* libstdc++.6.tbd */; };
 		E3B754721EB18EE2000DA5FA /* Rvs_Streamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B754711EB18EE2000DA5FA /* Rvs_Streamer.framework */; };
+		E3B754771EB1D4FD000DA5FA /* ShowCIDuserPasswordController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B754761EB1D4FD000DA5FA /* ShowCIDuserPasswordController.m */; };
+		E3B7547C1EB1D8C8000DA5FA /* VideoStarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B7547A1EB1D8C8000DA5FA /* VideoStarViewController.m */; };
+		E3B7547D1EB1D8C8000DA5FA /* VideoStarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3B7547B1EB1D8C8000DA5FA /* VideoStarViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,9 +26,8 @@
 		E3B754511EB18BED000DA5FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E3B754531EB18BED000DA5FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E3B754541EB18BED000DA5FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E3B754561EB18BED000DA5FA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E3B754571EB18BED000DA5FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E3B7545A1EB18BED000DA5FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3B754561EB18BED000DA5FA /* MainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		E3B754571EB18BED000DA5FA /* MainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
 		E3B7545C1EB18BED000DA5FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3B7545F1EB18BED000DA5FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3B754611EB18BED000DA5FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +35,11 @@
 		E3B7546D1EB18C4C000DA5FA /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		E3B7546F1EB18C5C000DA5FA /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
 		E3B754711EB18EE2000DA5FA /* Rvs_Streamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Rvs_Streamer.framework; sourceTree = "<group>"; };
+		E3B754751EB1D4FD000DA5FA /* ShowCIDuserPasswordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowCIDuserPasswordController.h; sourceTree = "<group>"; };
+		E3B754761EB1D4FD000DA5FA /* ShowCIDuserPasswordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowCIDuserPasswordController.m; sourceTree = "<group>"; };
+		E3B754791EB1D8C8000DA5FA /* VideoStarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoStarViewController.h; sourceTree = "<group>"; };
+		E3B7547A1EB1D8C8000DA5FA /* VideoStarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoStarViewController.m; sourceTree = "<group>"; };
+		E3B7547B1EB1D8C8000DA5FA /* VideoStarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoStarViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,15 +77,9 @@
 		E3B7544F1EB18BED000DA5FA /* Stream */ = {
 			isa = PBXGroup;
 			children = (
+				E3B754781EB1D766000DA5FA /* controller */,
 				E3B754671EB18C02000DA5FA /* 采集端SDK */,
-				E3B754531EB18BED000DA5FA /* AppDelegate.h */,
-				E3B754541EB18BED000DA5FA /* AppDelegate.m */,
-				E3B754561EB18BED000DA5FA /* ViewController.h */,
-				E3B754571EB18BED000DA5FA /* ViewController.m */,
-				E3B754591EB18BED000DA5FA /* Main.storyboard */,
 				E3B7545C1EB18BED000DA5FA /* Assets.xcassets */,
-				E3B7545E1EB18BED000DA5FA /* LaunchScreen.storyboard */,
-				E3B754611EB18BED000DA5FA /* Info.plist */,
 				E3B754501EB18BED000DA5FA /* Supporting Files */,
 			);
 			path = Stream;
@@ -88,7 +88,11 @@
 		E3B754501EB18BED000DA5FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E3B754531EB18BED000DA5FA /* AppDelegate.h */,
+				E3B754541EB18BED000DA5FA /* AppDelegate.m */,
 				E3B754511EB18BED000DA5FA /* main.m */,
+				E3B7545E1EB18BED000DA5FA /* LaunchScreen.storyboard */,
+				E3B754611EB18BED000DA5FA /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -109,6 +113,20 @@
 				E3B7546B1EB18C3E000DA5FA /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3B754781EB1D766000DA5FA /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3B754561EB18BED000DA5FA /* MainController.h */,
+				E3B754571EB18BED000DA5FA /* MainController.m */,
+				E3B754751EB1D4FD000DA5FA /* ShowCIDuserPasswordController.h */,
+				E3B754761EB1D4FD000DA5FA /* ShowCIDuserPasswordController.m */,
+				E3B754791EB1D8C8000DA5FA /* VideoStarViewController.h */,
+				E3B7547A1EB1D8C8000DA5FA /* VideoStarViewController.m */,
+				E3B7547B1EB1D8C8000DA5FA /* VideoStarViewController.xib */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,9 +188,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3B7547D1EB1D8C8000DA5FA /* VideoStarViewController.xib in Resources */,
 				E3B754601EB18BED000DA5FA /* LaunchScreen.storyboard in Resources */,
 				E3B7545D1EB18BED000DA5FA /* Assets.xcassets in Resources */,
-				E3B7545B1EB18BED000DA5FA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,23 +201,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3B754581EB18BED000DA5FA /* ViewController.m in Sources */,
+				E3B754581EB18BED000DA5FA /* MainController.m in Sources */,
+				E3B754771EB1D4FD000DA5FA /* ShowCIDuserPasswordController.m in Sources */,
 				E3B754551EB18BED000DA5FA /* AppDelegate.m in Sources */,
 				E3B754521EB18BED000DA5FA /* main.m in Sources */,
+				E3B7547C1EB1D8C8000DA5FA /* VideoStarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E3B754591EB18BED000DA5FA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E3B7545A1EB18BED000DA5FA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E3B7545E1EB18BED000DA5FA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -358,6 +370,7 @@
 				E3B754661EB18BED000DA5FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

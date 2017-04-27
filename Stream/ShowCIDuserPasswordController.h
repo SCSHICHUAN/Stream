@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ShowCIDuserPasswordController.h
 //  Stream
 //
 //  Created by SHICHUAN on 2017/4/27.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ShowCIDuserPasswordController : UITableViewController
 
 @end
-
