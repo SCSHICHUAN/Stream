@@ -7,8 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import <Rvs_Streamer/Rvs_Streamer_API.h>
+#define K_COMPANY_ID   @"f83cba96bfa24bedb49b58e55749f0f0"
+#define K_COMPANY_KEY  @"1469094063851"
+#define K_APP_ID       @"31122017042709530001491447501161"
+#define K_LICENSE      @"MARA160924"
 
-@interface AppDelegate ()
+
+@interface AppDelegate ()<RvsStreamerInitHelperDelegate>
 
 @end
 
@@ -17,35 +23,38 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // 获取RvsStreamerInitHelper单例
+    RvsStreamerInitHelper *helper = [RvsStreamerInitHelper
+                                     streamerInitHelper];
+    // 设置代理
+    helper.delegate = self;
+    
+    
+    //设置Config文件、record文件路径、APP版本
+    //workPath:表示sdk生成的配置文件存储路径 如果为nil则采用默认
+    //cachePath:表示sdk log文件存储路径 如果为nil则采用默认
+    //appVersion:表示App版本 如果为nil则采用默认
+    [helper setStreamerWithWorkPath:nil cachePath:
+     nil appVersion :nil];
+    
+    // 设置sdk参数，CompanyID、CompanyKey、AppID、License（需要去官网申请）
+    [helper setLoginInfoWithCompanyID:K_COMPANY_ID companyKey:K_COMPANY_KEY appID:K_APP_ID license:K_LICENSE];
+    
+    [helper login];
+    
     return YES;
 }
 
-
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+//采集端sdk登录过程中发生状态变化、错误、登录进度通知
+- (void)onAuthResultWithAuthState:(EN_RVS_STREAMER_AUTH_STATE)authState
+                          errCode:(EN_RVS_ERR)errCode
+{
+    NSLog(@"errCode= [ %u ]",errCode);
+    NSLog(@"authState = [ %u ]",authState);
 }
 
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-}
-
-
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-}
-
-
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
 
 
 @end

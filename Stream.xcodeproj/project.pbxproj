@@ -13,6 +13,10 @@
 		E3B7545B1EB18BED000DA5FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3B754591EB18BED000DA5FA /* Main.storyboard */; };
 		E3B7545D1EB18BED000DA5FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3B7545C1EB18BED000DA5FA /* Assets.xcassets */; };
 		E3B754601EB18BED000DA5FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3B7545E1EB18BED000DA5FA /* LaunchScreen.storyboard */; };
+		E3B7546C1EB18C3E000DA5FA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B7546B1EB18C3E000DA5FA /* SystemConfiguration.framework */; };
+		E3B7546E1EB18C4C000DA5FA /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B7546D1EB18C4C000DA5FA /* libresolv.tbd */; };
+		E3B754701EB18C5C000DA5FA /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B7546F1EB18C5C000DA5FA /* libstdc++.6.tbd */; };
+		E3B754721EB18EE2000DA5FA /* Rvs_Streamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B754711EB18EE2000DA5FA /* Rvs_Streamer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		E3B7545C1EB18BED000DA5FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3B7545F1EB18BED000DA5FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3B754611EB18BED000DA5FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3B7546B1EB18C3E000DA5FA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E3B7546D1EB18C4C000DA5FA /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		E3B7546F1EB18C5C000DA5FA /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		E3B754711EB18EE2000DA5FA /* Rvs_Streamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Rvs_Streamer.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3B754701EB18C5C000DA5FA /* libstdc++.6.tbd in Frameworks */,
+				E3B7546E1EB18C4C000DA5FA /* libresolv.tbd in Frameworks */,
+				E3B7546C1EB18C3E000DA5FA /* SystemConfiguration.framework in Frameworks */,
+				E3B754721EB18EE2000DA5FA /* Rvs_Streamer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +56,7 @@
 			children = (
 				E3B7544F1EB18BED000DA5FA /* Stream */,
 				E3B7544E1EB18BED000DA5FA /* Products */,
+				E3B7546A1EB18C3E000DA5FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +71,7 @@
 		E3B7544F1EB18BED000DA5FA /* Stream */ = {
 			isa = PBXGroup;
 			children = (
+				E3B754671EB18C02000DA5FA /* 采集端SDK */,
 				E3B754531EB18BED000DA5FA /* AppDelegate.h */,
 				E3B754541EB18BED000DA5FA /* AppDelegate.m */,
 				E3B754561EB18BED000DA5FA /* ViewController.h */,
@@ -77,6 +91,24 @@
 				E3B754511EB18BED000DA5FA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E3B754671EB18C02000DA5FA /* 采集端SDK */ = {
+			isa = PBXGroup;
+			children = (
+				E3B754711EB18EE2000DA5FA /* Rvs_Streamer.framework */,
+			);
+			name = "采集端SDK";
+			sourceTree = "<group>";
+		};
+		E3B7546A1EB18C3E000DA5FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3B7546F1EB18C5C000DA5FA /* libstdc++.6.tbd */,
+				E3B7546D1EB18C4C000DA5FA /* libresolv.tbd */,
+				E3B7546B1EB18C3E000DA5FA /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,7 +142,7 @@
 				TargetAttributes = {
 					E3B7544C1EB18BED000DA5FA = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 3JXF3ZZ9G5;
+						DevelopmentTeam = 84JV8F36TK;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -204,6 +236,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -253,6 +286,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -275,10 +309,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3JXF3ZZ9G5;
+				DEVELOPMENT_TEAM = 84JV8F36TK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Stream",
+				);
 				INFOPLIST_FILE = Stream/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SHICHUAN.Stream;
+				PRODUCT_BUNDLE_IDENTIFIER = SHICHUAN.Stream.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -287,10 +326,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3JXF3ZZ9G5;
+				DEVELOPMENT_TEAM = 84JV8F36TK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Stream",
+				);
 				INFOPLIST_FILE = Stream/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = SHICHUAN.Stream;
+				PRODUCT_BUNDLE_IDENTIFIER = SHICHUAN.Stream.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
