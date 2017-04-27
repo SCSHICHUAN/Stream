@@ -25,11 +25,11 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.mediaSurfaceView = [[RvsMediaSurfaceView alloc] init];
 //    //获取采集端视频画面
-//    [self.mediaSurfaceView videoShowWithView:self.videoView];
+   [self.mediaSurfaceView videoShowWithView:self.videoView];
 //    // 如需设置视频参数请调用下面的方法
 //    [self.mediaSurfaceView openCameraWithResolution: RvsStreamResolution720p];
     //打开摄像头设置分辨率(默认采用480p)
-//    [self.mediaSurfaceView openCamera];
+    [self.mediaSurfaceView openCamera];
 //    [self.view.layer addSublayer:[self.mediaSurfaceView getPreviewLayerWithFrame:self.view.bounds]];
     
     
